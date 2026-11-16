@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | De Za's Accessories</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+</head>
+<body class="cart-page">
+    <header class="page-shell site-header">
+        <a class="wordmark" href="index.html">De Za's <span>Accessories</span></a>
+        <a class="cart-link" href="cart.html" aria-current="page">Cart <span data-cart-count>0</span></a>
+    </header>
+    <main class="page-shell cart-main">
+        <h1>Your Cart</h1>
+        <p id="cart-message" class="cart-message" role="status" aria-live="polite"></p>
+        <p id="cart-empty" hidden>Your cart is empty. Add something lovely from one of our collections.</p>
+        <section id="cart-content" aria-label="Cart and checkout">
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-summary">
+                <p class="cart-total">Total: <strong id="cart-total">₦0</strong></p>
+                <button id="clear-cart" class="secondary-button" type="button">Clear cart</button>
+            </div>
+            <form id="checkout-form" class="checkout-form">
+                <h2>Checkout</h2>
+                <p class="checkout-payment">Make your payment to the account provided below to complete your order.</p>
+                <label for="account-name">Account Name:<b> De Za's Accessories</b></label>
+                <div class="account-number-row">
+                    <span>Account Number: <b id="account-number">7372910030</b></span>
+                    <button id="copy-account-number" class="copy-account-button" type="button" aria-label="Copy account number" title="Copy account number">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <rect x="8" y="8" width="12" height="13" rx="2"></rect>
+                            <path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"></path>
+                        </svg>
+                    </button>
+                </div>
+                <p id="copy-account-status" class="copy-account-status" role="status" aria-live="polite"></p>
+                <label class="payment">
+                    <input type="checkbox" name="payment" required>
+                    I understand that i will not request for refund after payment has been made.
+                </label>
+                <button class="checkout-button" type="submit">Confirm Payment</button>
+            </form>
+        </section>
+        <p id="cart-confirmation" class="cart-confirmation" role="status" hidden></p>
+        <a class="continue-shopping" href="index.html">Continue shopping</a>
+    </main>
+</body>
+</html>

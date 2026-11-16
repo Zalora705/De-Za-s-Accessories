@@ -133,12 +133,7 @@ h2 {
     letter-spacing: -0.025em;
 }
 
-.heading-rule {
-    width: 76px;
-    height: 2px;
-    margin-bottom: 10px;
-    background: var(--gold);
-}
+
 
 .category-grid {
     display: grid;
