@@ -1,0 +1,50 @@
+.cart-page .site-header.contact-header {
+    position: relative;
+    justify-content: space-between;
+}
+
+.contact-header .wordmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.contact-main {
+    min-height: 55vh;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.contact-main h1 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-main address {
+    margin: 2rem 0;
+    font-style: normal;
+}
+
+.contact-main address p {
+    display: grid;
+    gap: 0.25rem;
+    margin: 1rem 0;
+}
+
+.contact-main address a {
+    width: fit-content;
+    color: #1c3028;
+    font-weight: 600;
+}
+
+.contact-main address a:hover {
+    color: #947447;
+}
+
+@media (max-width: 420px) {
+    .contact-header .wordmark {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+    }
+}
