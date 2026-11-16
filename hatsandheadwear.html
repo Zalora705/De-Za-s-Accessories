@@ -4,135 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hats &amp; Headwear | De Za's Accessories</title>
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            background: #efefef;
-            color: #111111;
-            font-family: Arial, sans-serif;
-        }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem 3rem;
-        }
-        .home-button {
-            display: inline-block;
-            margin: 1.25rem 0 0 1.5rem;
-            padding: 0.7rem 1rem;
-            background: #222222;
-            color: #ffffff;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        .page-intro {
-            margin-bottom: 1.75rem;
-        }
-        .page-intro h1 {
-            margin: 0 0 0.4rem;
-            font-size: clamp(2rem, 3vw, 3rem);
-            letter-spacing: -0.04em;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .product {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100%;
-            padding: 1.25rem 1.25rem 1.5rem;
-            border: 1px solid #d8d8d8;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.78);
-            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-        }
-        .product-image-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            min-height: 280px;
-            margin-bottom: 1.2rem;
-            border-radius: 10px;
-            background: #f3f3f3;
-            overflow: hidden;
-        }
-        .product-image {
-            display: block;
-            width: 100%;
-            height: 100%;
-            max-height: 290px;
-            object-fit: contain;
-        }
-        .product h3 {
-            margin: 0;
-            font-size: clamp(1.4rem, 2vw, 2.2rem);
-            line-height: 1.1;
-            letter-spacing: -0.04em;
-            font-weight: 800;
-        }
-        .price {
-            margin: 1.1rem 0 1.15rem;
-            font-size: clamp(1.7rem, 2vw, 2.6rem);
-            font-weight: 900;
-            line-height: 1;
-            letter-spacing: -0.04em;
-        }
-        .product button {
-            width: 100%;
-            border: none;
-            border-radius: 14px;
-            background: #ff3ea9;
-            color: #ffffff;
-            padding: 1rem 1.25rem;
-            font-size: clamp(1.4rem, 2vw, 2.2rem);
-            font-weight: 700;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="hatsandheadwear.css">
 </head>
-<body>
+<body class="product-page">
 <a class="home-button" href="index.html">Back to Home</a>
 <main>
     <header class="page-intro">
         <h1>Shop Hats &amp; Headwear</h1>
     </header>
     <section class="products" aria-label="Hats and headwear for sale">
-        <article class="product">
+<article class="product">
             <div class="product-image-wrap">
-                <svg class="product-image" role="img" aria-label="Everyday Cotton Cap illustration" viewBox="0 0 240 160"><use href="img/product-images.svg#hat-cap"></use></svg>
+                <img class="product-image" src="hatsheadwear-img/burberryvintagecheckequestrianknight.jpeg" alt="Burberry Vintage Check Equestrian Knight">
             </div>
-            <h3>Everyday Cotton Cap</h3>
-            <div class="price">₦12,000</div>
+            <h3>Burberry Vintage Check Equestrian Knight</h3>
+            <div class="price">₦18,000</div>
             <button type="button">Add to Cart</button>
         </article>
         <article class="product">
             <div class="product-image-wrap">
-                <svg class="product-image" role="img" aria-label="Classic Fedora illustration" viewBox="0 0 240 160"><use href="img/product-images.svg#hat-fedora"></use></svg>
+                <img class="product-image" src="hatsheadwear-img/chanelcoconeigeccwithearflap.jpeg" alt="Chanel Coco Neige CC With Ear Flap">
             </div>
-            <h3>Classic Fedora</h3>
-            <div class="price">₦28,000</div>
+            <h3>Chanel Coco Neige CC With Ear Flap</h3>
+            <div class="price">₦18,000</div>
             <button type="button">Add to Cart</button>
         </article>
         <article class="product">
             <div class="product-image-wrap">
-                <svg class="product-image" role="img" aria-label="Relaxed Bucket Hat illustration" viewBox="0 0 240 160"><use href="img/product-images.svg#hat-bucket"></use></svg>
+                <img class="product-image" src="hatsheadwear-img/diorobliquenshawnstussy.jpeg" alt="Dior Oblique & Shawn Stussy">
             </div>
-            <h3>Relaxed Bucket Hat</h3>
-            <div class="price">₦15,500</div>
+            <h3>Dior Oblique & Shawn Stussy</h3>
+            <div class="price">₦18,000</div>
             <button type="button">Add to Cart</button>
         </article>
         <article class="product">
             <div class="product-image-wrap">
-                <svg class="product-image" role="img" aria-label="Wool Blend Flat Cap illustration" viewBox="0 0 240 160"><use href="img/product-images.svg#hat-flatcap"></use></svg>
+                <img class="product-image" src="hatsheadwear-img/diorobliquetechnicalcottoncanvas.jpeg" alt="Dior Oblique Technical Cotton Canvas">
             </div>
-            <h3>Wool Blend Flat Cap</h3>
-            <div class="price">₦22,000</div>
+            <h3>Dior Oblique Technical Cotton Canvas</h3>
+            <div class="price">₦18,000</div>
+            <button type="button">Add to Cart</button>
+        </article>
+        <article class="product">
+            <div class="product-image-wrap">
+                <img class="product-image" src="hatsheadwear-img/guccioriginalggcanvas.jpeg" alt="Gucci Original GG Canvas">
+            </div>
+            <h3>Gucci Original GG Canvas</h3>
+            <div class="price">₦18,000</div>
+            <button type="button">Add to Cart</button>
+        </article>
+        <article class="product">
+            <div class="product-image-wrap">
+                <img class="product-image" src="hatsheadwear-img/guccisupremecanvasbeepatch.jpeg" alt="Gucci Supreme Canvas Bee Patch">
+            </div>
+            <h3>Gucci Supreme Canvas Bee Patch</h3>
+            <div class="price">₦18,000</div>
+            <button type="button">Add to Cart</button>
+        </article>
+        <article class="product">
+            <div class="product-image-wrap">
+                <img class="product-image" src="hatsheadwear-img/louisvuitton.jpeg" alt="Louis Vuitton Monogram Eclipse">
+            </div>
+            <h3>Louis Vuitton Monogram Eclipse</h3>
+            <div class="price">₦18,000</div>
+            <button type="button">Add to Cart</button>
+        </article>
+        <article class="product">
+            <div class="product-image-wrap">
+                <img class="product-image" src="hatsheadwear-img/pumaessentialscatlogo.jpeg" alt="Puma Essentials Cat Logo">
+            </div>
+            <h3>Puma Essentials Cat Logo</h3>
+            <div class="price">₦18,000</div>
             <button type="button">Add to Cart</button>
         </article>
     </section>
